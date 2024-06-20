@@ -17,10 +17,10 @@ ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Load the deep learning model
-model = tf.keras.models.load_model(r'E:\MyProjects\DL Indoor Images\models\EfficientNetB7_model_IndoorGames.h5', compile=False)
+model = tf.keras.models.load_model(r'models\EfficientNetB7_model_IndoorGames.h5', compile=False)
 
 # Emotion labels
-with open(r'E:\MyProjects\DL Indoor Images\models\EfficientNetB7_model_IndoorGamesclass_indices.json', 'r') as f:
+with open(r'models\EfficientNetB7_model_IndoorGamesclass_indices.json', 'r') as f:
     class_indices = json.load(f)
 class_names = {v: k for k, v in class_indices.items()}
 
