@@ -12,5 +12,5 @@ pip install -r .\requirements.txt
 ## RUN Flask app
 python app.py
 
-## Deploy the App
-Done via colab using Gradio
+## Accuracy metrics
+Got overall accuracy of 93% on all training, validation and test dataset and trained on kaggle notebook
